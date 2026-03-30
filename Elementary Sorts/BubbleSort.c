@@ -9,9 +9,9 @@ void swap(int* a, int *b){
 }
 void bubbleSort(int arr[], int size){
     for(int i = 0; i < size; i++){
-        for(int j = i+1; j < size; j++){
-            if(arr[i] > arr[j]){
-                swap(&arr[i], &arr[j]);
+        for(int j = 0; j+1 < size; j++){
+            if(arr[j] > arr[j+1]){
+                swap(&arr[j], &arr[j+1]);
             }
         }
     }
